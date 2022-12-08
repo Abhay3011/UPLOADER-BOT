@@ -12,7 +12,7 @@ Telegram RoBot to Upload Links.
 
 **Features**:
 
-👉 Upload [yt-dlp Supported Links](https://ytdl-org.github.io/youtube-dl/supportedsites.html) to Telegram.
+👉 Upload [Supported Links](https://ytdl-org.github.io/youtube-dl/supportedsites.html) to Telegram.
 
 👉 Upload HTTP/HTTPS as File/Video to Telegram.
 
