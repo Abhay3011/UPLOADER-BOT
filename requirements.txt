@@ -1,7 +1,7 @@
 cryptg
 numpy
 git+https://github.com/Abhay3011/youtube-dl
-git+https://github.com/Tinche/aiofiles/archive/master.zip
+https://github.com/Tinche/aiofiles/archive/master.zip
 Pillow
 aiohttp
 hachoir
