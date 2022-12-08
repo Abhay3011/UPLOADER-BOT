@@ -16,7 +16,7 @@ Telegram RoBot to Upload Links.
 
 👉 Upload HTTP/HTTPS as File/Video to Telegram.
 
-👉 Upload zee5, sony.live, voot and much more.
+👉 Upload , sony.live, voot and much more.
 
 👉  Permanent thumbnail Support.
 
@@ -55,7 +55,7 @@ heroku/python
 
 * start - 👻 Check I'm alive or dead
 * help - 📝 How to use this robot
-* search - 🚸 Torrent search
+* search - 🚸  search
 * broadcast - 💌 Send message to users
 * total - 👨‍👨‍👦‍👦 To get total users count
 * viewthumbnail - 🌌 Current Thumbnail
