@@ -1,5 +1,6 @@
 numpy
-yt-dlp
+git+https://github.com/Abhay3011/youtube-dl
+git+https://github.com/Tinche/aiofiles/archive/master.zip
 Pillow
 aiohttp
 hachoir
