@@ -65,7 +65,7 @@ async def echo(bot, update):
                 url = url[o:o + l]
     if Config.HTTP_PROXY != "":
         command_to_exec = [
-            "yt-dlp",
+            "youtube-dl",
             "--no-warnings",
             "--youtube-skip-dash-manifest",
             "-j",
@@ -74,7 +74,7 @@ async def echo(bot, update):
         ]
     else:
         command_to_exec = [
-            "yt-dlp",
+            "youtube-dl",
             "--no-warnings",
             "--youtube-skip-dash-manifest",
             "-j",
@@ -92,7 +92,7 @@ async def echo(bot, update):
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
     if e_response and "nonnumeric port" not in e_response:
-        error_message = e_response.replace(Translation.ERROR_YTDLP, "")
+        error_message = e_response.replace(Translation.ERROR_Youtube-dl, "")
         if "This video is only available for registered users." in error_message:
             error_message = Translation.SET_CUSTOM_USERNAME_PASSWORD
         else:
