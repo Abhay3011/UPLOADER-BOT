@@ -2,7 +2,7 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5874353588:AAHpKVJBtbaGUWW_gorXOPS9hytYH1ye3N0")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5842881515:AAE98pMFsIjhiTCLP-3X-HT_9QXZT_GChck")
     # The Telegram API things
     API_ID = int(os.environ.get("API_ID", "9544521"))
     API_HASH = os.environ.get("API_HASH", "5cf32e97dc94510e46524f2286c95116")
@@ -20,7 +20,7 @@ class Config(object):
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
     HTTP_PROXY = ""
     # maximum message length in Telegram
-    MAX_MESSAGE_LENGTH = 4096
+    MAX_MESSAGE_LENGTH = 40960
     # set timeout for subprocess
     PROCESS_MAX_TIMEOUT = 3600
     # your telegram id
