@@ -91,7 +91,7 @@ async def youtube_dl_call_back(bot, update):
     download_directory = tmp_directory_for_each_user + "/" + str(file_name)
     command_to_exec = []
     if tg_send_type == "audio":
-        command_to_exec = ["youtube-dl", "-c",
+        command_to_exec = ["yt-dlp", "-c",
              "--max-filesize", str(Config.TG_MAX_FILE_SIZE),
              "--prefer-ffmpeg", "--extract-audio",
              "--audio-format", youtube_dl_ext,
@@ -101,7 +101,7 @@ async def youtube_dl_call_back(bot, update):
         minus_f_format = youtube_dl_format
         if "youtu" in youtube_dl_url:
             minus_f_format = youtube_dl_format + "+bestaudio"
-        command_to_exec = ["youtube-dl", "-c",
+        command_to_exec = ["yt-dlp", "-c",
             "--max-filesize", str(Config.TG_MAX_FILE_SIZE),
             "--embed-subs", "-f", minus_f_format,
             "--hls-prefer-ffmpeg", youtube_dl_url,
@@ -127,7 +127,7 @@ async def youtube_dl_call_back(bot, update):
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
 
-    ad_string_to_replace = "please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output."
+    ad_string_to_replace = "please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call yt-dlp with the --verbose flag and include its complete output."
     if e_response and ad_string_to_replace in e_response:
         error_message = e_response.replace(ad_string_to_replace, "")
         await bot.edit_message_text(
